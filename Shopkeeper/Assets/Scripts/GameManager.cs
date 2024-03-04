@@ -24,5 +24,23 @@ public class GameManager : MonoBehaviour
         }
     }
     private static GameState m_GameState;
+
+    public static float CurrentGold
+    {
+        get
+        {
+            return m_currentGold;
+        }
+        set
+        {
+            m_currentGold = value;
+        }
+    }
+    private static float  m_currentGold;
     #endregion
+    public float initialGold = 2500;
+    private void Start()
+    {
+        m_currentGold = initialGold;
+    }
 }

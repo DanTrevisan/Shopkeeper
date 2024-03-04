@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43c7a5dc07bc0d447be9bc5f5a12a6d2, type: 3}
-  m_Name: Magic Top
+  m_Name: Chain Helm
   m_EditorClassIdentifier: 
-  itemName: Magic Top
-  shopSprite: {fileID: -924713165, guid: b8358c41a0dcf314b9c8673e231b36a6, type: 3}
-  ingameSprite: {fileID: -924713165, guid: b8358c41a0dcf314b9c8673e231b36a6, type: 3}
-  itemDescription: A Magic Top
-  itemType: 1
-  price: 350
+  itemName: Chain Helm
+  shopSprite: {fileID: 1124447836, guid: b8358c41a0dcf314b9c8673e231b36a6, type: 3}
+  ingameSprite: {fileID: 1124447836, guid: b8358c41a0dcf314b9c8673e231b36a6, type: 3}
+  itemDescription: Chained helmet, useful against swords
+  itemType: 0
+  price: 400

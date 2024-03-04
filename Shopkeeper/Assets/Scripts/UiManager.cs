@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class UiManager : MonoBehaviour
 {
-    [SerializeField] public GameObject CanvasMain;
-    [SerializeField] public GameObject CanvasEquip;
-    [SerializeField] public GameObject CanvasShop;
+    [SerializeField] private GameObject CanvasMain;
+    [SerializeField] private GameObject CanvasEquip;
+    [SerializeField] private ShopScreen CanvasShop;
     [SerializeField] private ShopEventChannelSO channelOpenShop;
 
 
@@ -32,7 +32,8 @@ public class UiManager : MonoBehaviour
     public void OpenShopScreen(ShopInventory inventory)
     {
         CanvasMain.SetActive(false);
-        CanvasShop.SetActive(true);
+        CanvasShop.myInventory = inventory;
+        CanvasShop.gameObject.SetActive(true);
         GameManager.CurrentState = GameManager.GameState.STATE_PAUSED;
 
     }
@@ -40,7 +41,7 @@ public class UiManager : MonoBehaviour
     public void CloseShopScreen()
     {
         CanvasMain.SetActive(true);
-        CanvasShop.SetActive(false);
+        CanvasShop.gameObject.SetActive(false);
         GameManager.CurrentState = GameManager.GameState.STATE_PLAYING;
 
     }

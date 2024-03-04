@@ -1,18 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class MoneySystem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public TextMeshProUGUI textGold;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        //Not the proper way to do this, if I had more time I'd change it.
+        textGold.text = GameManager.CurrentGold.ToString();
     }
 }
