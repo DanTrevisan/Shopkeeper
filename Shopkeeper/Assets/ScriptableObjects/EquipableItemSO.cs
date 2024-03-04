@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[CreateAssetMenu(menuName = "ScriptableObjects/Equips",
+fileName = "Equips")]
 public class EquipableItemSO : ScriptableObject
 {
     public enum ItemType
@@ -16,4 +19,5 @@ public class EquipableItemSO : ScriptableObject
     public Sprite ingameSprite;
     public string itemDescription;
     public ItemType itemType;
+    public float price;
 }

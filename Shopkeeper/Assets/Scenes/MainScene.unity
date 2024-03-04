@@ -199,6 +199,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9e90a0b1d79de04dafe28530f251b4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  equipableItemSOs:
+  - {fileID: 11400000, guid: 83aa7ec6869cd55468b052e67d4cf409, type: 2}
+  - {fileID: 11400000, guid: 25e7e3f098e8d334a946270cf654c7f5, type: 2}
 --- !u!212 &496335531
 SpriteRenderer:
   m_ObjectHideFlags: 0
