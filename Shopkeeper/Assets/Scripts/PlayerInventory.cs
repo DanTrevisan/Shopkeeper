@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using static EquipableItemSO;
@@ -59,7 +60,7 @@ public class PlayerInventory : MonoBehaviour
         }
     }
 
-    public EquipableItemSO GetEquip( EquipableItemSO.ItemType itemType)
+    public EquipableItemSO GetEquip(EquipableItemSO.ItemType itemType)
     {
         switch (itemType)
         {
@@ -74,7 +75,7 @@ public class PlayerInventory : MonoBehaviour
                 default: return null;
         }
     }
-    public void UnequipItem(EquipableItemSO equip )
+    public void UnequipItem(EquipableItemSO equip)
     {
         int countCopies = 0;
         foreach(var item in m_inventory)
@@ -106,6 +107,29 @@ public class PlayerInventory : MonoBehaviour
                     img_ShoesSlot.sprite = null;
                     break;
             }
+        }
+    }
+
+    public void UnequipItemFromMenu(EquipableItemSO equip)
+    {
+        switch (equip.itemType)
+        {
+            case EquipableItemSO.ItemType.TOP:
+                m_topSlot = null;
+                img_TopSlot.sprite = null;
+                break;
+            case EquipableItemSO.ItemType.HAT:
+                m_hatSlot = null;
+                img_HatSlot.sprite = null;
+                break;
+            case EquipableItemSO.ItemType.BOTTOM:
+                m_bottomSlot = null;
+                img_BottomSlot.sprite = null;
+                break;
+            case EquipableItemSO.ItemType.SHOES:
+                m_shoesSlot = null;
+                img_ShoesSlot.sprite = null;
+                break;
         }
     }
  }

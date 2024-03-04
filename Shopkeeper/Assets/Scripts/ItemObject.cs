@@ -25,7 +25,7 @@ public class ItemObject : MonoBehaviour
         if(isShopPrefab)
             FindObjectOfType<ShopScreen>().SetItem(this);
         else
-            FindObjectOfType<EquipScreen>().SetItem(this);
+            FindObjectOfType<EquipScreen>().SetItem(this,false);
 
     }
 
