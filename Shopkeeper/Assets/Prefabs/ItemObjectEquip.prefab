@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 1692692604129174068}
   - component: {fileID: 5925179555098793757}
   m_Layer: 0
-  m_Name: ItemObject
+  m_Name: ItemObjectEquip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -132,6 +132,7 @@ MonoBehaviour:
   myImage: {fileID: 8108531109220033362}
   m_isSelected: 0
   m_selectButton: {fileID: 5925179555098793757}
+  isShopPrefab: 0
   selector: {fileID: 2271045862748323789}
 --- !u!114 &5925179555098793757
 MonoBehaviour:

@@ -11,7 +11,8 @@ public class ItemObject : MonoBehaviour
     private EquipableItemSO myItem;
     public bool m_isSelected = false;
     public Button m_selectButton;
-     
+    public bool isShopPrefab = true;
+    [SerializeField] private Image selector;
     private void OnEnable()
     {
         m_selectButton = this.GetComponent<Button>();
@@ -20,8 +21,12 @@ public class ItemObject : MonoBehaviour
 
     private void SelectItem()
     {
-        m_isSelected = true;
-        FindObjectOfType<ShopDescription>().SetItem(myItem);
+        selector.gameObject.SetActive(true);
+        if(isShopPrefab)
+            FindObjectOfType<ShopScreen>().SetItem(this);
+        else
+            FindObjectOfType<EquipScreen>().SetItem(this);
+
     }
 
     public void SetupItemObject(EquipableItemSO item)
@@ -29,9 +34,19 @@ public class ItemObject : MonoBehaviour
         myImage.sprite = item.shopSprite;
         myItem = item;
     }
+    public void SetSelected(bool selected)
+    {
+        m_isSelected = selected;
+        selector.gameObject.SetActive(selected);
+    }
+    public EquipableItemSO GetEquippable()
+    {
+        return myItem;
+    }
     private void OnDisable()
     {
         m_selectButton.onClick.RemoveListener(SelectItem);
 
     }
+    
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class UiManager : MonoBehaviour
@@ -8,7 +9,6 @@ public class UiManager : MonoBehaviour
     [SerializeField] private GameObject CanvasEquip;
     [SerializeField] private ShopScreen CanvasShop;
     [SerializeField] private ShopEventChannelSO channelOpenShop;
-
 
     public void Awake()
     {
@@ -32,7 +32,7 @@ public class UiManager : MonoBehaviour
     public void OpenShopScreen(ShopInventory inventory)
     {
         CanvasMain.SetActive(false);
-        CanvasShop.myInventory = inventory;
+        CanvasShop.m_myInventory = inventory;
         CanvasShop.gameObject.SetActive(true);
         GameManager.CurrentState = GameManager.GameState.STATE_PAUSED;
 
