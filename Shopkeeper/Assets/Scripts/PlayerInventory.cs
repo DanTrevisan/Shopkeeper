@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-using static EquipableItemSO;
-using static UnityEditor.Progress;
 
 public class PlayerInventory : MonoBehaviour
 {

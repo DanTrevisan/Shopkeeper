@@ -43,6 +43,9 @@ public class UiManager : MonoBehaviour
         CanvasMain.SetActive(true);
         CanvasShop.gameObject.SetActive(false);
         GameManager.CurrentState = GameManager.GameState.STATE_PLAYING;
-
-    }
+     }
+    public void ExitGame()
+    {
+        Application.Quit();
+    }    
 }
