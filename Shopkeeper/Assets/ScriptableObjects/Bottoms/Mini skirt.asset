@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43c7a5dc07bc0d447be9bc5f5a12a6d2, type: 3}
   m_Name: Mini skirt
   m_EditorClassIdentifier: 
-  itemName: Mini skirt
-  shopSprite: {fileID: 0}
+  itemName: Robe skirt
+  shopSprite: {fileID: -523126338, guid: b8358c41a0dcf314b9c8673e231b36a6, type: 3}
   ingameSprite: {fileID: 0}
-  itemDescription: A skirt. But mini.
+  itemDescription: A skirt that's part of a robe
   itemType: 2
   price: 260

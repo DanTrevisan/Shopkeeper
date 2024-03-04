@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Boots
   m_EditorClassIdentifier: 
   itemName: Boots
-  shopSprite: {fileID: 0}
-  ingameSprite: {fileID: 0}
+  shopSprite: {fileID: -665855903, guid: b8358c41a0dcf314b9c8673e231b36a6, type: 3}
+  ingameSprite: {fileID: -665855903, guid: b8358c41a0dcf314b9c8673e231b36a6, type: 3}
   itemDescription: Boot
   itemType: 3
   price: 400

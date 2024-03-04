@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43c7a5dc07bc0d447be9bc5f5a12a6d2, type: 3}
   m_Name: Future Shirt
   m_EditorClassIdentifier: 
-  itemName: Future Shirt
-  shopSprite: {fileID: 0}
-  ingameSprite: {fileID: 0}
-  itemDescription: A futuristic shirt. Maybe we'll wear that in 2077
-  itemType: 0
+  itemName: Heavy Armor
+  shopSprite: {fileID: -440099667, guid: b8358c41a0dcf314b9c8673e231b36a6, type: 3}
+  ingameSprite: {fileID: -440099667, guid: b8358c41a0dcf314b9c8673e231b36a6, type: 3}
+  itemDescription: A high defensive armor. But there are o enemies in this game...
+  itemType: 1
   price: 500

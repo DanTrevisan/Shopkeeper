@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43c7a5dc07bc0d447be9bc5f5a12a6d2, type: 3}
   m_Name: Tank top
   m_EditorClassIdentifier: 
-  itemName: Tank Top
-  shopSprite: {fileID: 0}
-  ingameSprite: {fileID: 0}
-  itemDescription: A tank top
+  itemName: Leather Armor
+  shopSprite: {fileID: -795662847, guid: b8358c41a0dcf314b9c8673e231b36a6, type: 3}
+  ingameSprite: {fileID: -795662847, guid: b8358c41a0dcf314b9c8673e231b36a6, type: 3}
+  itemDescription: A leather armor
   itemType: 1
   price: 150

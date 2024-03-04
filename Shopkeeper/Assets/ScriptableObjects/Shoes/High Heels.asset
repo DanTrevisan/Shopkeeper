@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43c7a5dc07bc0d447be9bc5f5a12a6d2, type: 3}
   m_Name: High Heels
   m_EditorClassIdentifier: 
-  itemName: High Heels
-  shopSprite: {fileID: 0}
-  ingameSprite: {fileID: 0}
-  itemDescription: High heels shoes. You're taller now!
+  itemName: Heavy Boots
+  shopSprite: {fileID: -1197515900, guid: b8358c41a0dcf314b9c8673e231b36a6, type: 3}
+  ingameSprite: {fileID: -1197515900, guid: b8358c41a0dcf314b9c8673e231b36a6, type: 3}
+  itemDescription: Boots for protection
   itemType: 3
   price: 260

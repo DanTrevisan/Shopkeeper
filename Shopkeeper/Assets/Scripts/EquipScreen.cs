@@ -180,6 +180,7 @@ public class EquipScreen : MonoBehaviour
         {
             ButtonEquip.gameObject.SetActive(true);
             ButtonUnequip.gameObject.SetActive(false);
+            ResetSlotButtons();
             m_lastBtnSelected = null;
 
         }

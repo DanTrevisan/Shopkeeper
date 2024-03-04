@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Short
   m_EditorClassIdentifier: 
   itemName: Shorts
-  shopSprite: {fileID: 0}
-  ingameSprite: {fileID: 0}
+  shopSprite: {fileID: -1390454025, guid: b8358c41a0dcf314b9c8673e231b36a6, type: 3}
+  ingameSprite: {fileID: -1390454025, guid: b8358c41a0dcf314b9c8673e231b36a6, type: 3}
   itemDescription: I like shorts. They're comfy and easy to wear.
   itemType: 2
   price: 150
